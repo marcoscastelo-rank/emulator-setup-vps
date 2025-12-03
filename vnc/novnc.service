@@ -1,0 +1,13 @@
+[Unit]
+Description=noVNC + TigerVNC Server
+After=network.target
+
+[Service]
+User=marcos_castelo
+Type=simple
+ExecStart=/home/marcos_castelo/vnc/start_vnc.sh
+ExecStop=/usr/bin/vncserver -kill :1
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
