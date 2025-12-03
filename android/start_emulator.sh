@@ -1,7 +1,7 @@
 #!/bin/bash
 export DISPLAY=:1
 
-AVD_NAME="Pixel_KVM"
+AVD_NAME="pixel6-api33"
 
 echo "===== INICIANDO Xvfb ====="
 Xvfb :1 -screen 0 1080x1920x24 &
@@ -21,7 +21,7 @@ $ANDROID_SDK_ROOT/emulator/emulator \
   -avd $AVD_NAME \
   -gpu swiftshader_indirect \
   -verbose \
-  -qemu -display none &
+  -qemu -cpu host &
 
 echo "===== TODOS OS SERVIÇOS INICIADOS ====="
 
