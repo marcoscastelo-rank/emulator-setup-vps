@@ -12,6 +12,6 @@ export ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/tools/bin
 
 yes | sdkmanager --licenses
-sdkmanager "platform-tools" "platforms;android-33" "system-images;android-33;google_apis;x86_64" "emulator"
+sdkmanager "platform-tools" "platforms;android-33" "system-images;android-33;google_apis_playstore;x86_64" "emulator"
 
 echo "SDK Android instalado com sucesso."
